@@ -1,10 +1,10 @@
+import os
+import datetime
+#import emailSender
 import tweepy
 import time
 import sys
 sys.path.insert(1, '/Users/mac/Documents/PythonProjects/SMTP')
-import emailSender
-import datetime
-import os
 
 # Env variables
 CONSUMER_KEY = os.environ.get('CONSUMER_KEY_TWITTER')
@@ -29,8 +29,8 @@ while True:
         print("Success")
     except Exception as err:
         print(err)
-        emailSender.sendAlert(
-            'ERR', 'Check Twitter pyBot on Raspberry Pi!', 'ondrejtichy07@gmail.com')
+        '''emailSender.sendAlert(
+            'ERR', 'Check Twitter pyBot on Raspberry Pi!', 'ondrejtichy07@gmail.com')'''
         pass
 
     time.sleep(86400)
