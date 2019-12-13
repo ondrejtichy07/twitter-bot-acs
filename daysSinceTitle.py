@@ -1,11 +1,10 @@
 import os
 import datetime
 #import emailSender
-
 import tweepy
 import time
 import sys
-sys.path.insert(1, '/Users/mac/Documents/PythonProjects/SMTP')
+# sys.path.insert(1, '/Users/mac/Documents/PythonProjects/SMTP')
 
 # Env variables
 CONSUMER_KEY = os.environ.get('CONSUMER_KEY_TWITTER')
